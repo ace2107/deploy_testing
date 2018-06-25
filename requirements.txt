@@ -1,2 +1,4 @@
 requests
+pip
+subprocess
 os
