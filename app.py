@@ -1,10 +1,11 @@
 import requests
-from subprocess import call
+import subprocess
 
 #registry = "https://openshift.default.svc.cluster.local"
 api_url = "http://user-api-thoth-test-core.cloud.upshift.engineering.redhat.com/api/v1/analyze"
 
 subprocess.run("oc get imagestream")
+subprocess.call("oc get bc")
 
 images = ['fedora:28','fedora:27','fedora:26']
 analyzer = 'fridex/thoth-package-extract'
